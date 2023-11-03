@@ -59,7 +59,7 @@ morgan.token('host', function(req, res) {
 })
 app.use(morgan(':method :url :status :res[content-length] :response-time ms :host'))
 // app.use(morgan('combined',{immediate: function (req,res){ return res.path}}))
-app.get('/api/notes',(request,response)=>{
+app.get('https://sabrideploys.onrender.com/notes',(request,response)=>{
   response.json(notes)
 })
 app.get('/api/persons',(request,response)=>{
